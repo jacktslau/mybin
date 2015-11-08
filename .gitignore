@@ -1,0 +1,84 @@
+## Generic files to ignore
+##########################
+*~
+*.lock
+*.swp
+*.out
+.history
+
+# Compiled source #
+##########################
+*.com
+*.dll
+*.exe
+*.o
+*.so
+
+# Java specific #
+##########################
+*.class
+
+# SBT specific #
+##########################
+target/
+project/boot
+lib_managed/*
+project/build/target
+project/build/lib_managed
+project/build/src_managed
+project/plugins/lib_managed
+project/plugins/target
+project/plugins/src_managed
+project/plugins/project
+.lib/
+
+# Packages #
+##########################
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+##########################
+*.log
+*.sqlite
+
+# OS generated files #
+##########################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Git files #
+##########################
+
+# IDE files #
+##########################
+.metadata
+jrebel.lic
+.settings
+.classpath
+.project
+.idea/
+.idea_modules/
+.ensime*
+*.sublime-*
+.cache
+.projectile
+*.eml
+*.iml
+*.ipr
+*.iws
+.*.sw?
