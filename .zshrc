@@ -50,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(nyan git gitignore colored-man colorize github jira vagrant virtualenv pip python brew brew-cask osx ruby sbt scala postgres ant aws gradle gulp node npm redis-cli sublime urltools ssh-agent zsh-syntax-highlighting)
+plugins=(nyan git gitignore colored-man colorize github virtualenv pip python brew brew-cask osx ruby sbt scala postgres ant aws gradle gulp node npm redis-cli sublime urltools web-search encode64 zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,10 +81,12 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/bin/helpers.sh
 source ~/bin/vpn.sh
+source ~/bin/java.sh
+source ~/bin/aws.sh
 source ~/bin/.aliasrc.sh
 source ~/bin/.exportrc.sh
+source ~/.muneris.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
