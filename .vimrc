@@ -1,13 +1,9 @@
-" Manage vim runtimepath
-execute pathogen#infect()
-
 set background=dark
 
-" solarized options 
+" solarized options
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 let g:solarized_termcolors = 16
-colorscheme solarized
 
 " Command history
 set history=1000

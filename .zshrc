@@ -50,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(nyan git gitignore colored-man colorize github virtualenv pip python brew brew-cask osx ruby sbt scala postgres ant aws gradle gulp node npm redis-cli sublime urltools web-search encode64 zsh-syntax-highlighting)
+plugins=(git gitignore iterm2 colored-man colorize github virtualenv java pip python brew brew-cask osx ruby sbt scala postgres ant aws aws-eb gradle gulp node npm redis-cli urltools web-search encode64 zsh-syntax-highlighting desk golang)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,17 +81,20 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/bin/vpn.sh
-source ~/bin/java.sh
-source ~/bin/aws.sh
 source ~/bin/.aliasrc.sh
 source ~/bin/.exportrc.sh
-source ~/.muneris.sh
+
+source ~/bin/go.sh
+source ~/bin/aws.sh
+source ~/bin/gcloud.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 zstyle -s ':completion:*:hosts' hosts _ssh_config
 [[ -r ~/.ssh/config ]] && _ssh_config+=($(cat ~/.ssh/config | sed -ne 's/Host[=\t ]//p'))
 zstyle ':completion:*:hosts' hosts $_ssh_config
 
-test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true

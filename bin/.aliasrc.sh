@@ -1,6 +1,5 @@
-alias ls='gls --color=auto' # Default
-alias ll="gls --color=auto -lha"
-alias lsd="gls --color=auto -hlt" # List sorted by modification time
+alias ls='exa' # Default
+alias ll="exa -laghm --git"
 alias vi="mvim -v"
 alias vim="mvim -v"
 

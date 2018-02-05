@@ -1,0 +1,6 @@
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts
+[submodule "colors/vim-solarized8"]
+	path = colors/vim-solarized8
+	url = https://github.com/lifepillar/vim-solarized8.git
