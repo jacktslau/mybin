@@ -1,8 +1,9 @@
+# Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap caskroom/cask
-
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 brew update
 
@@ -21,14 +22,11 @@ brew install npm
 brew install desk
 
 brew cask install iterm2
-
 brew cask install java
-
 brew cask install java8
-
 brew cask install caffeine
-
 brew cask install atom
+brew cask install font-fira-code
 
 brew install scala sbt
 

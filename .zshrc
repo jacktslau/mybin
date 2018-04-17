@@ -50,7 +50,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitignore iterm2 colored-man colorize github virtualenv java pip python brew brew-cask osx ruby sbt scala postgres ant aws aws-eb gradle gulp node npm redis-cli urltools web-search encode64 zsh-syntax-highlighting desk golang)
+plugins=(git gitignore iterm2 colored-man colorize github virtualenv java pip python brew brew-cask osx ruby sbt scala postgres ant aws gradle gulp node npm redis-cli urltools web-search encode64 zsh-syntax-highlighting desk golang aws-eb)
 
 source $ZSH/oh-my-zsh.sh
 
