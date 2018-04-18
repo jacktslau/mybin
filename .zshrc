@@ -87,6 +87,7 @@ source ~/bin/.exportrc.sh
 source ~/bin/go.sh
 source ~/bin/aws.sh
 source ~/bin/gcloud.sh
+source ~/bin/ruby.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 
